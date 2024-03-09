@@ -12,7 +12,14 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="PopularMovies" component={PopularMoviesScreen} />
+        <Stack.Screen
+          name="PopularMovies"
+          component={PopularMoviesScreen}
+          options={{
+            title: "Films populaires",
+            headerTitleAlign: "center",
+          }}
+        />
         <Stack.Screen name="Movie" component={MovieScreen} />
       </Stack.Navigator>
     </NavigationContainer>
